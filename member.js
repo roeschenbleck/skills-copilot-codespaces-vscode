@@ -1,11 +1,27 @@
-function sklillsMember() {
-  return (
-    <div className="flex flex-col items-center justify-center w-full h-full">
-      <div className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-2xl font-bold">Member</h1>
-        <p className="text-lg">Welcome to the Member page!</p>
-      </div>
-    </div>
-  );
+function skillsMember()
+
+{
+  return {
+    name: "Member",
+    description: "A member of the team.",
+    type: "object",
+    properties: {
+      name: {
+        type: "string",
+        description: "The name of the member.",
+      },
+      role: {
+        type: "string",
+        description: "The role of the member.",
+      },
+      skills: {
+        type: "array",
+        items: {
+          type: "string",
+          description: "The skills of the member.",
+        },
+      },
+    },
+  };
 }
  
